@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JOURNAL D'OPÉRATION - ABYSS</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Special+Elite&family=Courier+Prime:wght@400;700&family=Permanent+Marker&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Page de couverture -->
+    <div class="page-container active" id="page-0">
+        <div class="journal-cover">
+            <div class="cover-stains"></div>
+            <div class="cover-content">
+                <div class="classified-stamp rotating">CONFIDENTIEL</div>
+                <h1 class="cover-title">JOURNAL D'OPÉRATION</h1>
+                <div class="cover-subtitle">OPÉRATION ABYSS</div>
+                <div class="cover-details">
+                    <p>Organisation: KOMORRA</p>
+                    <p>Cible: SARAF - Attaque Laboratoire</p>
+                    <p>Localisation: Cayo Perico</p>
+                    <p>Date: Décembre 2025</p>
+                </div>
+                <div class="top-secret-stamp">TOP SECRET</div>
+                <div class="cover-number">DOSSIER N° KOMORRA-2025-ATTAQUE-ABYSS</div>
+            </div>
+            <button class="open-journal" onclick="goToPage(1)">📖 OUVRIR LE JOURNAL</button>
+        </div>
+    </div>
+
+    <!-- Page 1: Statistiques -->
+    <div class="page-container" id="page-1">
+        <div class="journal-page">
+            <div class="page-number">- 1 / 10 -</div>
+            <div class="coffee-stain stain-1"></div>
+            
+            <h2 class="handwritten-title">RÉSUMÉ DE L'OPÉRATION</h2>
+            
+            <div class="stats-boxes">
+                <div class="stat-box">
+                    <div class="stat-number">8</div>
+                    <div class="stat-label">PREUVES COLLECTÉES</div>
+                    <div class="checkmark">✓</div>
+                </div>
+                <div class="stat-box">
+                    <div class="stat-number">20</div>
+                    <div class="stat-label">JOURS D'OBSERVATION</div>
+                    <div class="checkmark">✓</div>
+                </div>
+                <div class="stat-box">
+                    <div class="stat-number">12</div>
+                    <div class="stat-label">AGENTS MOBILISÉS</div>
+                    <div class="checkmark">✓</div>
+                </div>
+            </div>
+
+            <div class="handwritten-note">
+                <p class="marker-text">📍 CIBLE CONFIRMÉE</p>
+                <p>Laboratoire clandestin D'abyss</p>
+                <p>Organisation SARAF - Production plante sous-marine</p>
+                <p>Récolte en plongée profonde + transformation</p>
+                <p>Localisation: Cayo Perico (5 km du QG KOMORRA)</p>
+                <p class="marker-text red">💰 TAXES ILLÉGALES: 400 000 $</p>
+            </div>
+
+            <div class="stamp-collection">
+                <div class="round-stamp">VALIDÉ</div>
+                <div class="round-stamp urgent">URGENT</div>
+            </div>
+        </div>
+        <div class="page-nav">
+            <button onclick="goToPage(2)" class="btn-next">PAGE SUIVANTE →</button>
+        </div>
+    </div>
+
+    <!-- Page 2: Photo du labo -->
+    <div class="page-container" id="page-2">
+        <div class="journal-page">
+            <div class="page-number">- 2 / 10 -</div>
+            
+            <h2 class="handwritten-title">RECONNAISSANCE DU SITE</h2>
+            
+            <div class="photo-taped">
+                <div class="tape tape-top-left"></div>
+                <div class="tape tape-top-right"></div>
+                <img src="laboratoire-cayo-perico.png" alt="Laboratoire" class="vintage-photo">
+                <div class="tape tape-bottom-left"></div>
+                <div class="tape tape-bottom-right"></div>
+            </div>
+            
+            <div class="photo-caption">
+                <p class="marker-text">📸 Photo de reconnaissance - 10/12/2025</p>
+                <p class="typewriter-text">Hangar métallique - Cayo Perico</p>
+                <p class="typewriter-text">Environnement: Zone enneigée</p>
+                <p class="typewriter-text">Végétation dense - Accès limité</p>
+            </div>
+
+            <div class="handwritten-arrow">→ CIBLE IDENTIFIÉE</div>
+            <div class="ink-stain"></div>
+        </div>
+        <div class="page-nav">
+            <button onclick="goToPage(1)" class="btn-prev">← PAGE PRÉCÉDENTE</button>
+            <button onclick="goToPage(3)" class="btn-next">PAGE SUIVANTE →</button>
+        </div>
+    </div>
+
+    <!-- Page 3: Informations sur la cible -->
+    <div class="page-container" id="page-3">
+        <div class="journal-page">
+            <div class="page-number">- 3 / 10 -</div>
+            <div class="coffee-stain stain-2"></div>
+            
+            <h2 class="handwritten-title">INFORMATIONS SUR LA CIBLE</h2>
+            
+            <div class="info-section">
+                <p class="section-title">🎯 IDENTIFICATION</p>
+                <ul class="typewriter-list">
+                    <li><strong>Nom de code:</strong> "laboratoire abyss"</li>
+                    <li><strong>Organisation:</strong> SARAF</li>
+                    <li><strong>Type:</strong> Laboratoire de production</li>
+                    <li><strong>Production:</strong> Plante "Abyss" sous-marine</li>
+                    <li><strong>Méthode:</strong> Récolte en plongée profonde</li>
+                    <li><strong>Activité secondaire:</strong> Racket territorial</li>
+                </ul>
+            </div>
+
+            <div class="info-section">
+                <p class="section-title">🌊 L'ABYSS - SUBSTANCE</p>
+                <ul class="typewriter-list">
+                    <li><strong>Nature:</strong> Plante aquatique rare des profondeurs</li>
+                    <li><strong>Récolte:</strong> Nécessite équipement de plongée</li>
+                    <li><strong>Traitement:</strong> Laboratoire spécialisé requis</li>
+                    <li><strong>Valeur marché:</strong> Extrêmement élevée</li>
+                    <li><strong>Danger:</strong> Plongées à risque + transformation chimique</li>
+                </ul>
+            </div>
+
+            <div class="info-section">
+                <p class="section-title">📍 LOCALISATION</p>
+                <ul class="typewriter-list">
+                    <li><strong>Zone:</strong> Cayo Perico</li>
+                    <li><strong>Bâtiment:</strong> Hangar métallique</li>
+                    <li><strong>Distance QG:</strong> 5 kilomètres</li>
+                    <li><strong>Accès:</strong> Sécurisé</li>
+                </ul>
+            </div>
+
+            <div class="danger-box">
+                <p class="marker-text red">⚠️ NIVEAU DE MENACE: ÉLEVÉ (85%)</p>
+                <ul class="typewriter-list">
+                    <li>Membres SARAF armés en permanence</li>
+                    <li>Système de surveillance actif</li>
+                    <li>8-10 personnes estimées sur site</li>
+                    <li><strong>Équipements de plongée</strong></li>
+                    <li><strong>Racket: 400 000$ de taxes au autre groupes</strong></li>
+                    <li>Pratiques d'intimidation et prise d'otages si ont ne paye pas</li>
+                </ul>
+            </div>
+
+            <div class="classified-stamp small">SECRET</div>
+        </div>
+        <div class="page-nav">
+            <button onclick="goToPage(2)" class="btn-prev">← PAGE PRÉCÉDENTE</button>
+            <button onclick="goToPage(4)" class="btn-next">PAGE SUIVANTE →</button>
+        </div>
+    </div>
+
+    <!-- Page 4: Objectifs -->
+    <div class="page-container" id="page-4">
+        <div class="journal-page">
+            <div class="page-number">- 4 / 10 -</div>
+            
+            <h2 class="handwritten-title">OBJECTIFS DE LA MISSION</h2>
+            
+            <div class="objective-main">
+                <p class="section-title">🔴 MISSION PRINCIPALE</p>
+                <p class="typewriter-text">Neutraliser et prendre le contrôle du laboratoire D'abyss appartenant au SARAF. Saisir l'ensemble de la production de plante Abyss (récolte sous-marine + stock transformé). Récupérer équipements de plongée et matériel de transformation. Mettre fin au racket de la taxe de 400 000$. Établir le contrôle territorial de KOMORRA.</p>
+            </div>
+
+            <div class="objectives-list">
+                <p class="section-title">📋 OBJECTIFS SECONDAIRES</p>
+                
+                <div class="objective-item">
+                    <span class="objective-letter">A</span>
+                    <div class="objective-content">
+                        <strong>SAISIE DES ACTIFS</strong>
+                        <p>Plante Abyss récoltée + produits transformés</p>
+                    </div>
+                </div>
+
+                <div class="objective-item">
+                    <span class="objective-letter">B</span>
+                    <div class="objective-content">
+                        <strong>DESTRUCTION INFRASTRUCTURE</strong>
+                        <p>Démantèlement matériel de transformation et équipements de plongée</p>
+                    </div>
+                </div>
+
+                <div class="objective-item">
+                    <span class="objective-letter">C</span>
+                    <div class="objective-content">
+                        <strong>RENSEIGNEMENT</strong>
+                        <p>Localisation zones de récolte sous-marine + contacts réseau SARAF + routes d'approvisionnement</p>
+                    </div>
+                </div>
+
+                <div class="objective-item">
+                    <span class="objective-letter">D</span>
+                    <div class="objective-content">
+                        <strong>MESSAGE DISSUASIF</strong>
+                        <p>Affirmer la suprématie de KOMORRA</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="approval-stamp">APPROUVÉ</div>
+        </div>
+        <div class="page-nav">
+            <button onclick="goToPage(3)" class="btn-prev">← PAGE PRÉCÉDENTE</button>
+            <button onclick="goToPage(5)" class="btn-next">PAGE SUIVANTE →</button>
+        </div>
+    </div>
+
+    <!-- Page 5: Timeline -->
+    <div class="page-container" id="page-5">
+        <div class="journal-page">
+            <div class="page-number">- 5 / 10 -</div>
+            
+            <h2 class="handwritten-title">JOURNAL DES OBSERVATIONS</h2>
+            
+            <div class="timeline-vintage">
+                <div class="timeline-entry">
+                    <div class="timeline-date">15 decembre</div>
+                    <div class="timeline-content">
+                        <strong>Début surveillance</strong>
+                        <p>Équipe renseignement déployée. Identification activités suspectes SARAF.</p>
+                        <div class="entry-stamp">J-28</div>
+                    </div>
+                </div>
+
+                <div class="timeline-entry">
+                    <div class="timeline-date">15 decembre</div>
+                    <div class="timeline-content">
+                        <strong>Première filature réussie</strong>
+                        <p>Vehicule SARAF suivi jusqu'au laboratoire. Position GPS enregistrée.</p>
+                        <div class="entry-stamp">J-21</div>
+                    </div>
+                </div>
+
+                <div class="timeline-entry">
+                    <div class="timeline-date">15 decembre</div>
+                    <div class="timeline-content">
+                        <strong>Découverte activité plongée</strong>
+                        <p>Observation équipes SARAF en tenue de plongée. Récolte plante Abyss en eaux profondes confirmée.</p>
+                        <div class="entry-stamp">J-15</div>
+                    </div>
+                </div>
+
+                <div class="timeline-entry">
+                    <div class="timeline-date">16 decembre</div>
+                    <div class="timeline-content">
+                        <strong>Découverte du racket</strong>
+                        <p>Preuves collectées: SARAF exige 400 000$ de taxes Système de racket territorial organisé.</p>
+                        <div class="entry-stamp">J-8</div>
+                    </div>
+                </div>
+
+                <div class="timeline-entry">
+                    <div class="timeline-date">14 DÉC</div>
+                    <div class="timeline-content">
+                        <strong>Prise d'otages documentée</strong>
+                        <p>Photos et vidéos des membres SARAF avec otages.</p>
+                        <div class="entry-stamp">J-3</div>
+                    </div>
+                </div>
+
+                <div class="timeline-entry active">
+                    <div class="timeline-date">16 DÉC</div>
+                    <div class="timeline-content">
+                        <strong>GO POUR L'OPÉRATION</strong>
+                        <p>Validation finale. Attaque prévue 22H00. Tous agents en position.</p>
+                        <div class="entry-stamp go">GO</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="classified-stamp medium">CONFIDENTIEL</div>
+        </div>
+        <div class="page-nav">
+            <button onclick="goToPage(4)" class="btn-prev">← PAGE PRÉCÉDENTE</button>
+            <button onclick="goToPage(6)" class="btn-next">PAGE SUIVANTE →</button>
+        </div>
+    </div>
+
+    <!-- Page 6: Preuves avec photo otages et vidéo -->
+    <div class="page-container" id="page-6">
+        <div class="journal-page">
+            <div class="page-number">- 6 / 10 -</div>
+            <div class="coffee-stain stain-3"></div>
+            
+            <h2 class="handwritten-title">PREUVES COLLECTÉES</h2>
+            
+            <div class="evidence-section">
+                <p class="section-title">📸 PHOTO 1 - CORPS AU SOL (INTERVENTION)</p>
+                
+                <div class="photo-taped small">
+                    <div class="tape tape-corner"></div>
+                    <img src="corps-saraf.png" alt="Corps SARAF au sol" class="vintage-photo">
+                    <div class="tape tape-corner-2"></div>
+                </div>
+                
+                <p class="photo-caption-small">
+                    <strong>Description:</strong> Plusieurs membres SARAF au sol suite à intervention - Zone urbaine enneigée - Véhicules présents
+                </p>
+            </div>
+
+            <div class="evidence-section">
+                <p class="section-title">📸 PHOTO 2 - MEMBRES SARAF IDENTIFIÉS</p>
+                
+                <div class="photo-taped small">
+                    <div class="tape tape-corner"></div>
+                    <img src="membres-saraf.png" alt="Membres SARAF" class="vintage-photo">
+                    <div class="tape tape-corner-2"></div>
+                </div>
+                
+                <p class="photo-caption-small">
+                    <strong>Description:</strong> 4 membres SARAF identifiés - Hoodies bleus caractéristiques 
+                </p>
+            </div>
+
+            <div class="evidence-section">
+                <p class="section-title">📸 PHOTO 3 - OTAGES SOUS MENACE</p>
+                
+                <div class="photo-taped small">
+                    <div class="tape tape-corner"></div>
+                    <img src="otages-saraf.png" alt="Otages SARAF" class="vintage-photo">
+                    <div class="tape tape-corner-2"></div>
+                </div>
+                
+                <p class="photo-caption-small">
+                    <strong>Description:</strong> 3 membres SARAF en otages - Pratiques d'intimidation confirmées
+                </p>
+            </div>
+
+            <div class="evidence-section">
+                <p class="section-title">🎥 VIDÉO - PREUVE RACKET 400 000$</p>
+                
+                <div class="video-evidence">
+                    <div class="video-icon">▶️</div>
+                    <div class="video-info">
+                        <strong>Enregistrement taxes illégales ABYSS</strong>
+                        <p>Lien: youtube.com/watch?v=HgYVZHD9k5I</p>
+                        <p>Contenu: Preuve paiement 400 000$ de taxes</p>
+                        <a href="https://youtu.be/HgYVZHD9k5I" target="_blank" class="btn-watch">▶ VISIONNER LA VIDÉO</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="evidence-section">
+                <p class="section-title">📄 AUTRES DOCUMENTS</p>
+                <ul class="typewriter-list">
+                    <li>✓ Enregistrements équipes de plongée SARAF</li>
+                    <li>✓ Photos récolte plante Abyss en profondeur</li>
+                    <li>✓ Logs conversations sur transformation</li>
+                    <li>✓ Confirmation emplacement laboratoire</li>
+                    <li>✓ Preuves racket et intimidation</li>
+                </ul>
+            </div>
+
+            <div class="round-stamp">PREUVE</div>
+        </div>
+        <div class="page-nav">
+            <button onclick="goToPage(5)" class="btn-prev">← PAGE PRÉCÉDENTE</button>
+            <button onclick="goToPage(7)" class="btn-next">PAGE SUIVANTE →</button>
+        </div>
+    </div>
+
+    <!-- Page 7: Plan d'attaque -->
+    <div class="page-container" id="page-7">
+        <div class="journal-page">
+            <div class="page-number">- 7 / 10 -</div>
+            
+            <h2 class="handwritten-title">PLAN D'ATTAQUE</h2>
+            
+            <div class="attack-time-box">
+                <p class="section-title">⏰ HEURE H</p>
+                <div class="big-time">22:00</div>
+                <p class="typewriter-text">Tous les agents en position</p>
+            </div>
+
+            <div class="phases-compact">
+                <div class="phase-compact">
+                    <span class="phase-num">PHASE 1</span>
+                    <span class="phase-time"></span>
+                    <strong>APPROCHE DISCRÈTE</strong>
+                    <p>Positionnement périmètre. Neutralisation surveillance externe.</p>
+                </div>
+
+                <div class="phase-compact">
+                    <span class="phase-num">PHASE 2</span>
+                    <span class="phase-time"></span>
+                    <strong>ASSAUT INITIAL</strong>
+                    <p>Entrée forcée simultanée. Neutralisation saraf.</p>
+                </div>
+
+                <div class="phase-compact">
+                    <span class="phase-num">PHASE 3</span>
+                    <span class="phase-time"></span>
+                    <strong>SÉCURISATION</strong>
+                    <p>Contrôle total laboratoire. Arrestations.</p>
+                </div>
+
+                <div class="phase-compact">
+                    <span class="phase-num">PHASE 4</span>
+                    <span class="phase-time"></span>
+                    <strong>RÉCUPÉRATION</strong>
+                    <p>Saisie plante Abyss, équipements plongée, documents.</p>
+                </div>
+
+                <div class="phase-compact">
+                    <span class="phase-num">PHASE 5</span>
+                    <span class="phase-time"></span>
+                    <strong>EXFILTRATION</strong>
+                    <p>Démantèlement matériel. Repli vers QG.</p>
+                </div>
+            </div>
+
+            <div class="round-stamp large">VALIDÉ</div>
+        </div>
+        <div class="page-nav">
+            <button onclick="goToPage(6)" class="btn-prev">← PAGE PRÉCÉDENTE</button>
+            <button onclick="goToPage(8)" class="btn-next">PAGE SUIVANTE →</button>
+        </div>
+    </div>
+
+    <!-- Page 8: Checklist opérationnelle -->
+    <div class="page-container" id="page-8">
+        <div class="journal-page">
+            <div class="page-number">- 8 / 10 -</div>
+            
+            <h2 class="handwritten-title">CHECKLIST OPÉRATIONNELLE</h2>
+            
+            <div class="checklist-section">
+                <p class="section-title">✓ PHASE 1 - APPROCHE</p>
+                <div class="checkbox-list">
+                    <label><input type="checkbox"> Équipes en position</label>
+                    <label><input type="checkbox"> Communications établies</label>
+                    <label><input type="checkbox"> Surveillance neutralisée</label>
+                </div>
+            </div>
+
+            <div class="checklist-section">
+                <p class="section-title">✓ PHASE 2 - ASSAUT</p>
+                <div class="checkbox-list">
+                    <label><input type="checkbox"> Breaching réussi</label>
+                    <label><input type="checkbox"> Membres saraf</label>
+                    <label><input type="checkbox"> Périmètre sécurisé</label>
+                </div>
+            </div>
+
+            <div class="checklist-section">
+                <p class="section-title">✓ PHASE 3 - SÉCURISATION</p>
+                <div class="checkbox-list">
+                    <label><input type="checkbox"> Bâtiment sécurisé</label>
+                    <label><input type="checkbox"> Laboratoire contrôlé</label>
+                    <label><input type="checkbox"> Défenses établies</label>
+                </div>
+            </div>
+
+            <div class="checklist-section">
+                <p class="section-title">✓ PHASE 4 - RÉCUPÉRATION</p>
+                <div class="checkbox-list">
+                    <label><input type="checkbox"> Plante Abyss saisie</label>
+                    <label><input type="checkbox"> Équipements plongée saisis</label>
+                    <label><input type="checkbox"> Documents récupérés</label>
+                </div>
+            </div>
+
+            <div class="checklist-section">
+                <p class="section-title">✓ PHASE 5 - EXFILTRATION</p>
+                <div class="checkbox-list">
+                    <label><input type="checkbox"> Matériel détruit</label>
+                    <label><input type="checkbox"> Actifs évacués</label>
+                    <label><input type="checkbox"> Membre Komorra rapatriés</label>
+                </div>
+            </div>
+        </div>
+        <div class="page-nav">
+            <button onclick="goToPage(7)" class="btn-prev">← PAGE PRÉCÉDENTE</button>
+            <button onclick="goToPage(9)" class="btn-next">PAGE SUIVANTE →</button>
+        </div>
+    </div>
+
+    <!-- Page 9: Équipes -->
+    <div class="page-container" id="page-9">
+        <div class="journal-page">
+            <div class="page-number">- 9 / 10 -</div>
+            <div class="coffee-stain stain-4"></div>
+            
+            <h2 class="handwritten-title">RÉPARTITION DES ÉQUIPES</h2>
+            
+            <div class="team-list">
+                <div class="team-item">
+                    <span class="team-icon">👑</span>
+                    <div class="team-info">
+                        <strong>CHEF D'OPÉRATION</strong>
+                        <p>[James Scott]</p>
+                        <small>Coordination - Décisions - Communication QG</small>
+                    </div>
+                </div>
+
+                <div class="team-item">
+                    <span class="team-icon">⚔️</span>
+                    <div class="team-info">
+                        <strong>ÉQUIPE ASSAUT (4 membres KOMORRA)</strong>
+                        <p>[Membres 1-4]</p>
+                        <small>Entrée forcée - Neutralisation - Sécurisation</small>
+                    </div>
+                </div>
+
+                <div class="team-item">
+                    <span class="team-icon">🎯</span>
+                    <div class="team-info">
+                        <strong>TIREURS ÉLITE (2 membres KOMORRA)</strong>
+                        <p>[Membres 1-2]</p>
+                        <small>Couverture distance - Surveillance renforts</small>
+                    </div>
+                </div>
+
+                <div class="team-item">
+                    <span class="team-icon">🚗</span>
+                    <div class="team-info">
+                        <strong>ÉQUIPE TRANSPORT (2 membres KOMORRA)</strong>
+                        <p>[Membres 1-2]</p>
+                        <small>Sécurisation véhicules - Transport actifs</small>
+                    </div>
+                </div>
+
+                <div class="team-item">
+                    <span class="team-icon">📋</span>
+                    <div class="team-info">
+                        <strong>ÉQUIPE INTEL (2 membres KOMORRA)</strong>
+                        <p>[Membres 1-2]</p>
+                        <small>Documents - Inventaire - Photos</small>
+                    </div>
+                </div>
+
+                <div class="team-item">
+                    <span class="team-icon">⚕️</span>
+                    <div class="team-info">
+                        <strong>SUPPORT MÉDICAL (1 membres KOMORRA)</strong>
+                        <p>[Membres]</p>
+                        <small>Soins d'urgence - Évacuation - Triage</small>
+                    </div>
+                </div>
+            </div>
+
+            <div class="classified-stamp medium">SECRET</div>
+        </div>
+        <div class="page-nav">
+            <button onclick="goToPage(8)" class="btn-prev">← PAGE PRÉCÉDENTE</button>
+            <button onclick="goToPage(10)" class="btn-next">PAGE SUIVANTE →</button>
+        </div>
+    </div>
+
+    <!-- Page 10: Validation finale -->
+    <div class="page-container" id="page-10">
+        <div class="journal-page">
+            <div class="page-number">- 10 / 10 -</div>
+            
+            <h2 class="handwritten-title">VALIDATION FINALE</h2>
+            
+            <div class="validation-section">
+                <p class="section-title">✅ STATUT DU DOSSIER</p>
+                <div class="status-checks">
+                    <div class="status-item">✓ 8 preuves collectées</div>
+                    <div class="status-item">✓ Racket 400k$ documenté</div>
+                    <div class="status-item">✓ Activité plongée confirmée</div>
+                    <div class="status-item">✓ Otages identifiés</div>
+                    <div class="status-item">✓ Plan validé</div>
+                    <div class="status-item">✓ Équipes assignées</div>
+                    <div class="status-item">✓ Photos interventions</div>
+                    <div class="status-item">✓ Vidéos archivées</div>
+                </div>
+            </div>
+
+            <div class="signatures-section">
+                <p class="section-title">📝 SIGNATURES</p>
+                
+                <div class="signature-box">
+                    <div class="sig-label">CHEF D'OPÉRATION</div>
+                    <div class="signature-line"></div>
+                    <div class="sig-name">[James Scott]</div>
+                    <div class="sig-date">Date: 19/12/2025</div>
+                </div>
+
+                <div class="signature-box">
+                    <div class="sig-label">RESPONSABLE KOMORRA</div>
+                    <div class="signature-line"></div>
+                    <div class="sig-name">[Luciano Morales]</div>
+                    <div class="sig-date">Date: 19/12/2025</div>
+                </div>
+            </div>
+
+            <div class="final-warning">
+                <p class="section-title red">⚠️ AVERTISSEMENT</p>
+                <p class="typewriter-text">Document classifié. Divulgation non autorisée passible de sanctions selon le code KOMORRA.</p>
+            </div>
+
+            <div class="final-stamps">
+                <div class="round-stamp xlarge approved">
+                    <div>APPROUVÉ</div>
+                    <div class="stamp-date">19 DÉC 2025</div>
+                    <div>KOMORRA</div>
+                </div>
+            </div>
+        </div>
+        <div class="page-nav">
+            <button onclick="goToPage(9)" class="btn-prev">← PAGE PRÉCÉDENTE</button>
+            <button onclick="goToPage(0)" class="btn-restart">🔄 RETOUR À LA COUVERTURE</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
